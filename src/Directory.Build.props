@@ -1,0 +1,44 @@
+<Project>
+	<!-- These properties will be shared for all projects -->
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+		<Nullable>enable</Nullable>
+		<AnalysisMode>AllEnabledByDefault</AnalysisMode>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Company>HashCode</Company>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Copyright>Copyright 2022-2024 HashCode</Copyright>
+		<Authors>HashCode Development Team</Authors>
+		<PackageTags>cloud;testing;integration</PackageTags>
+		<RepositoryUrl>https://github.com/hash-code-io/WebFramework</RepositoryUrl>
+	</PropertyGroup>
+
+	<!-- Nuget Package Setup -->
+	<PropertyGroup>
+		<IsPackable>True</IsPackable>
+		<MinVerTagPrefix>v</MinVerTagPrefix>
+
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+		<!-- SourceLink Config, needs nuget package in each csproj Microsoft.SourceLink.GitHub in order to work -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../../icon.png" Pack="true" PackagePath="" Visible="False" />
+		<None Include="../../LICENSE.txt" Pack="true" PackagePath="" Visible="False" />
+		<None Include="../../README.md" Pack="true" PackagePath="" Visible="False" />
+	</ItemGroup>
+
+</Project>
