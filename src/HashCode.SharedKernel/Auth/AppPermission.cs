@@ -21,7 +21,7 @@ public record AppPermission
     public string Value { get; }
 
     [return: NotNullIfNotNull(nameof(claim))]
-    public static Claim? ToClaim(AppPermission? claim) => claim is null ? null : new Claim(AppConstants.Auth.ClaimTypes.Permission, claim.Value);
+    public static Claim? ToClaim(AppPermission? claim) => claim is null ? null : new Claim(AuthConstants.Auth.ClaimTypes.Permission, claim.Value);
 
     [return: NotNullIfNotNull(nameof(claim))]
     public static implicit operator string?(AppPermission? claim) => claim?.Value;

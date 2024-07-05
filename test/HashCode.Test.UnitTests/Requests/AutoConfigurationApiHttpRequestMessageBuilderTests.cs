@@ -1,8 +1,8 @@
-﻿using Aisto.SharedKernel.Requests;
-using FastEndpoints;
+﻿using FastEndpoints;
+using HashCode.SharedKernel.Requests;
 using System.Net.Http.Json;
 
-namespace Aisto.Test.UnitTests.Requests;
+namespace HashCode.Test.UnitTests.Requests;
 
 public class AutoConfigurationApiHttpRequestMessageBuilderTests
 {

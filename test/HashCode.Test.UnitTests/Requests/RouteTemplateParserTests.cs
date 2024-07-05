@@ -1,6 +1,6 @@
-﻿using Aisto.SharedKernel.Requests;
+﻿using HashCode.SharedKernel.Requests;
 
-namespace Aisto.Test.UnitTests.Requests;
+namespace HashCode.Test.UnitTests.Requests;
 
 public sealed class RouteTemplateParserTests
 {
