@@ -1,20 +1,45 @@
 ﻿root = true
 
+# Program.cs only
+[Program.cs]
+# CA1852: Seal internal types
+dotnet_diagnostic.CA1852.severity = none
+
 # C# files
 [*.cs]
 
-#### Own overrides start ####
-
-# CA1002: Do not expose generic lists
-dotnet_diagnostic.CA1002.severity = none
-
-# CA2227: Collection properties should be read only
-dotnet_diagnostic.CA2227.severity = none
-
-#### Own overrides end ####
-
 space_within_single_line_array_initializer_braces = true
 max_line_length=200
+
+# CA1716: Identifiers should not match keywords
+dotnet_diagnostic.CA1716.severity = none
+
+# CA1711: Identifiers should not have incorrect suffix
+dotnet_diagnostic.CA1711.severity = none
+
+# CA1308: Normalize strings to uppercase
+dotnet_diagnostic.CA1308.severity = none
+
+# CA1812: Internal class never instantiated
+dotnet_diagnostic.CA1812.severity = silent
+
+# CA1054: Uri parameters should not be strings
+dotnet_diagnostic.CA1054.severity = suggestion
+
+# Default severity for analyzer diagnostics with category 'Naming'
+dotnet_analyzer_diagnostic.category-Naming.severity = suggestion
+
+# CA1303: Do not pass literals as localized parameters
+dotnet_diagnostic.CA1303.severity = silent
+
+# CA1307: Specify StringComparison for clarity
+dotnet_diagnostic.CA1307.severity = silent
+
+# CA1002: Do not expose generic lists
+dotnet_diagnostic.CA1002.severity = suggestion
+
+# CA2007: ConfigureAwait(false)
+dotnet_diagnostic.CA2007.severity = none
 
 #### Core EditorConfig Options ####
 
@@ -218,3 +243,21 @@ dotnet_naming_style.begins_with_i.required_prefix = I
 dotnet_naming_style.begins_with_i.required_suffix = 
 dotnet_naming_style.begins_with_i.word_separator = 
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+# CA1002: Do not expose generic lists
+dotnet_diagnostic.CA1002.severity = none
+
+# CA1305: Specify IFormatProvider
+dotnet_diagnostic.CA1305.severity = none
+
+# CA1040: Avoid empty interfaces
+dotnet_diagnostic.CA1040.severity = none
+
+# CA1056: URI properties should not be strings
+dotnet_diagnostic.CA1056.severity = none
+
+# CA1848: Use the LoggerMessage delegates
+dotnet_diagnostic.CA1848.severity = none
+
+# CA1024: Use properties where appropriate
+dotnet_diagnostic.CA1024.severity = none
