@@ -3,9 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{B0DBF488-F3BC-4FE8-A329-D5D9A85A3BA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{B9D22FD4-7B2B-4B37-B64D-E31BD6A00EBA}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\pr.yml = .github\workflows\pr.yml
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9D22FD4-7B2B-4B37-B64D-E31BD6A00EBA} = {B0DBF488-F3BC-4FE8-A329-D5D9A85A3BA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2128AAF5-44A5-46C8-A882-76AD6C687150}
